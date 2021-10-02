@@ -1,0 +1,15 @@
+{
+  "name": "portafolio-fabian_soto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": " node index.js"
+  },
+  "author": "Fabian Soto",
+  "license": "ISC"
+}
