@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="./content/portafolio.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
+  
+  </head>
+  <body>
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img class = "logoSize" src="./assets/images/logoFS.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/"><i class="fas fa-couch navBarIcons"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about"><i class="fas fa-child navBarIcons"></i>
+
+            About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projects"><i class="fas fa-puzzle-piece navBarIcons"></i>
+
+            Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services"><i class="fas fa-robot navBarIcons"></i>Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact"><i class="fas fa-hands-helping navBarIcons"></i>Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- nav bar -->
+
+<div class="container">
+
+  <h1><%= title %></h1>
+  
+  <script src="./scripts/portafolio.js"></script>
+  <script src="./jquery/dist/jquery.min.js"></script>
+  <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+<!-- accordion item -->
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Metacritic review controller
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img class ="accordionImgs" src="./assets/images/597919-metacritic-review-bombing.jpg"><br>Controlling who reviews and under what conditions has become really important as most of the content that the people are consuming is digital. false profiles are now very common. with this implementation I attempt to provide control over some minimum requirements that should be met by someone who ones to write a review about games.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        E-commerce adaptation
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img class ="accordionImgs" src="./assets/images/logo_four WHITE 1000x1000.png"><br>Having our products online is very important. Right now I'm currently working on the adaptation of an e-commerce for a family business that sell personalized medical uniforms.</div>
+    </div>
+  </div>
+ 
+</div>
+<!-- end of accordion item -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--  bottom  -->
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Copyright &copy; 2021 - Fabian Soto</a>
+    <p class="navbar-collapse">Student ID = 301153142</p>
+  </div>
+</nav>
+
+  </body>
+</html>

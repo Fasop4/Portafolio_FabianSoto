@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="./content/portafolio.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
+  
+  </head>
+  <body>
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img class = "logoSize" src="./assets/images/logoFS.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/"><i class="fas fa-couch navBarIcons"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about"><i class="fas fa-child navBarIcons"></i>
+
+            About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projects"><i class="fas fa-puzzle-piece navBarIcons"></i>
+
+            Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services"><i class="fas fa-robot navBarIcons"></i>Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact"><i class="fas fa-hands-helping navBarIcons"></i>Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- nav bar -->
+
+<div class="container">
+
+  <h1><%= title %></h1>
+  <p>Having problems with some software solutions? Here is what I do:</p>
+  <script src="./scripts/portafolio.js"></script>
+  <script src="./jquery/dist/jquery.min.js"></script>
+  <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+
+<!-- accordion item -->
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Web applications & web design
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img class ="accordionImgs" src="./assets/images/pexels-negative-space-160107.png"><br>Let's make your dreamed page or web application come to life</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Mobile Applications
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img class ="accordionImgs" src="./assets/images/pexels-cottonbro-5082580.png"><br>Having an app for the service or business you have might be esential for your success. </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Sound Engineering & production
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img class ="accordionImgs" src="./assets/images/pexels-jonathan-robles-5337092.png"><br>Who says a programmer is only a programmer? before I became one, I was, I am and always be a musician with excelent ear and taste for music mixing and production. Make those internal dreams come true bringing to life all those hidden talents</div>
+    </div>
+  </div>
+</div>
+<!-- end of accordion item -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--  bottom  -->
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Copyright &copy; 2021 - Fabian Soto</a>
+    <p class="navbar-collapse">Student ID = 301153142</p>
+  </div>
+</nav>
+
+    
+  </body>
+</html>

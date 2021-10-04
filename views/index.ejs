@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="./content/portafolio.css" />
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img class="logoSize" src="./assets/images/logoFS.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/"
+                ><i class="fas fa-couch navBarIcons"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about"
+                ><i class="fas fa-child navBarIcons"></i>
+
+                About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects"
+                ><i class="fas fa-puzzle-piece navBarIcons"></i>
+
+                Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services"
+                ><i class="fas fa-robot navBarIcons"></i>Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact"
+                ><i class="fas fa-hands-helping navBarIcons"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar -->
+
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Welcome to my portafolio</p>
+    </div>
+    <div class="flexItems">
+      <!-- card 1 -->
+      <div class="card" style="width: 18rem">
+        <img
+          alt="profile.png"
+          class="card-img-top"
+          src="./assets/images/fabian_perfil.png"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Hello! this is me</h5>
+          <p class="card-text">Find some key information about who I am</p>
+          <a href="/about" class="btn btn-primary">About me</a>
+        </div>
+      </div>
+      <!-- end of card 1 -->
+
+      <!-- card 2 -->
+      <div class="card" style="width: 18rem">
+        <img
+          alt="work.png"
+          class="card-img-top"
+          src="./assets/images/pexels-junior-teixeira-2047905.png">
+        <div class="card-body">
+          <h5 class="card-title">This is what I can do for you.</h5>
+          <p class="card-text">Need some assistance?.</p>
+          <a href="/services" class="btn btn-primary">Services</a>
+        </div>
+      </div>
+      <!-- end of card 2 -->
+
+      <!-- card 3 -->
+      <div class="card" style="width: 18rem">
+        <img
+          alt="projects.png"
+          class="card-img-top"
+          src="./assets/images/pexels-lukas-669615.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Projects</h5>
+          <p class="card-text">
+            Here in this section you fill find some examples of my previous work
+            and in progress.
+          </p>
+          <a href="/projects" class="btn btn-primary">Projects</a>
+        </div>
+      </div>
+      <!-- end of card 3 -->
+
+      <!-- card 4 -->
+      <div class="card" style="width: 18rem">
+        <img
+          alt="projects.png"
+          class="card-img-top"
+          src="./assets/images/pexels-porapak-apichodilok-346734.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Want to have a talk?</h5>
+          <p class="card-text">
+            Send me a message or access to my contact information
+          </p>
+          <a href="/contact" class="btn btn-primary">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of card 4 -->
+
+    <!--  bottom  -->
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Copyright &copy; 2021 - Fabian Soto</a>
+        <p class="navbar-collapse">Student ID = 301153142</p>
+      </div>
+    </nav>
+
+    <script src="./scripts/portafolio.js"></script>
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
