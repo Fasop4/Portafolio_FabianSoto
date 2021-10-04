@@ -1,9 +1,9 @@
 {
   "name": "portafolio-fabian_soto",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -27,5 +27,17 @@
     "@types/jquery": "^3.5.6",
     "@types/morgan": "^1.9.3",
     "nodemon": "^2.0.13"
-  }
+  },
+  "description": "portafolio assignment1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fasop4/Portafolio_FabianSoto.git"
+  },
+  "author": "Fabian Soto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fasop4/Portafolio_FabianSoto/issues"
+  },
+  "homepage": "https://github.com/Fasop4/Portafolio_FabianSoto#readme"
 }
