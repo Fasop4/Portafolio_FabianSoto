@@ -9,7 +9,18 @@ import path from 'path';
 import cookieParser from "cookie-parser";
 import logger from 'morgan';
 import indexRouter from './routes/index';
+import  mongoose from "mongoose";
 
+//instantiate Mongo
+mongoose.connect('mongodb://localhost:27017/mobile_store');
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', function () {
+  console.log("Connected to MongoDB at localhost:27017")
+});
+
+//instantiate express
 const app = express();
 
 // view engine setup

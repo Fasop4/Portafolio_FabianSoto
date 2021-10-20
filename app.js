@@ -9,6 +9,13 @@ const path_1 = __importDefault(require("path"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const morgan_1 = __importDefault(require("morgan"));
 const index_1 = __importDefault(require("./routes/index"));
+const mongoose_1 = __importDefault(require("mongoose"));
+mongoose_1.default.connect('mongodb://localhost:27017/mobile_store');
+const db = mongoose_1.default.connection;
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', function () {
+    console.log("Connected to MongoDB at localhost:27017");
+});
 const app = (0, express_1.default)();
 app.set('views', [path_1.default.join(__dirname, 'views'),
     path_1.default.join(__dirname, 'views/partials/')]);

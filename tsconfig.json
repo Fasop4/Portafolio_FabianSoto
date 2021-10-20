@@ -7,7 +7,8 @@
         "alwaysStrict": true,
         "removeComments": true,
         "esModuleInterop": true,
-        "moduleResolution": "Node"
+        "moduleResolution": "Node",
+        "skipLibCheck": true
     },
     "exclude": [
         "node_modules"
